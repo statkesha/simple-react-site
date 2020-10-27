@@ -15,8 +15,6 @@ import {
 import { Container } from '../../globalStyles';
 import {IconContext} from "react-icons/lib";
 import {Button} from "../../globalStyles";
-import s from './Navbar.css';
-
 
 
 const Navbar = () => {
