@@ -24,7 +24,7 @@ padding-left: 30px;
 }
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
 border-radius: 4px;
 background: ${({primary})=>(primary ? '#4b59f7' : '#0467fb')};
 white-space: nowrap;

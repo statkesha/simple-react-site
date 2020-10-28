@@ -12,16 +12,16 @@ import {
     NavBtnLink,
     NavItemBtn
 } from "./Navbar.elements";
-import { Container } from '../../globalStyles';
 import {IconContext} from "react-icons/lib";
 import {Button} from "../../globalStyles";
 
 
-const Navbar = () => {
+function Navbar() {
     const [click, setClick] = useState(false);
     const [button,setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
+    const closeMobileMenu=()=>setClick(false);
 
     const showButton = ()=>{
         if(window.innerWidth<=960){
@@ -42,7 +42,7 @@ window.addEventListener('resize',showButton);
         <IconContext.Provider value={{color: '#fff'}}>
          <Nav>
          <NavbarContainer>
-             <NavLogo to='/'>
+             <NavLogo to='/' onClick={closeMobileMenu}>
          <NavIcon />
         wow
          </NavLogo>
@@ -51,16 +51,22 @@ window.addEventListener('resize',showButton);
         </MenuIcon>
         <NavMenu onClick={handleClick} click={click}>
          <NavItem>
-        <NavLinks to='/'>Home </NavLinks>
+        <NavLinks to='/' onClick={closeMobileMenu}>Home </NavLinks>
         </NavItem>
         <NavItem>
-        <NavLinks to='/business'>for Business</NavLinks></NavItem>
+        <NavLinks to='/business' onClick={closeMobileMenu}>for Business</NavLinks></NavItem>
         <NavItemBtn>
-    {button ? (<NavBtnLink to='/sign-up'>
-<Button primary>SIGN UP </Button>
-</NavBtnLink>) : (<NavBtnLink to='/sign-up'>
-        <Button fontBig primary>Sign up </Button>
-    </NavBtnLink>)}
+    {button ? (
+            <NavBtnLink to='/sign-up'>
+            <Button primary>SIGN UP</Button>
+    </NavBtnLink>
+) : (
+    <NavBtnLink to='/sign-up'>
+        <Button onClick={closeMobileMenu} fontBig primary>
+    SIGN UP
+    </Button>
+    </NavBtnLink>
+)}
     </NavItemBtn>
     </NavMenu>
          </NavbarContainer>

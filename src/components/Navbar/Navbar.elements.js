@@ -14,8 +14,7 @@ position:sticky;
 top:0;
 z-index:999;`;
 
-export const NavbarContainer = styled
-(Container)`
+export const NavbarContainer = styled(Container)`
 display:flex;
 justify-content:space-between;
 height:80px;
@@ -89,12 +88,12 @@ color:#fff;
 display:flex;
 align-items: center;
 text-decoration: none;
-padding: 0.5 rem 1rem;
+padding: 0.5rem 1rem;
 height:100%;
 
 @media screen and (max-width:960px){
 text-align: center;
-padding: 2rem;
+padding: 2 rem;
 width:100%;
 display:table;
 
@@ -105,14 +104,13 @@ transition: all 0.3s ease;
 }`;
 
 export const NavItemBtn  = styled.li`
-@media screen and (max-width:960px){
+@media screen and (max-width:960px) {
 display:flex;
 justify-content:center;
 align-items:center;
 width:100%;
-height:100%;
+height:120px;
 }`;
-
 export const NavBtnLink = styled(Link)`
 display:flex;
 justify-content:center;
@@ -121,6 +119,6 @@ text-decoration: none;
 padding: 8px 16px;
 height:100%;
 width:100%;
-    outline:none;
-    border:none;
+border: none;
+outline: none;
     }`;

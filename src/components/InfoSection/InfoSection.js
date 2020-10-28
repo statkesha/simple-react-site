@@ -4,8 +4,10 @@ import {InfoSec,
     InfoRow,
     InfoColumn,
     TextWrapper,
-Heading,
-Subtitle} from "./InfoSection.elements";
+    Heading,
+    Subtitle,
+    Img,
+    ImgWrapper} from "./InfoSection.elements";
 import {Link} from 'react-router-dom';
 
 const InfoSection = ({primary,
@@ -15,7 +17,10 @@ const InfoSection = ({primary,
                          buttonLabel,
                          description,
                          headline,
-                         lightText}) => {
+                         lightText,
+                         img,
+                         alt,
+                         start}) => {
     return(
         <>
         <InfoSec lightBg={lightBg}>
@@ -32,6 +37,9 @@ const InfoSection = ({primary,
         </Link>
         </TextWrapper>
         </InfoColumn>
+        <ImgWrapper>
+        <Img src={img} alt={alt} />
+        </ImgWrapper>
         </InfoRow>
         </Container>
         </InfoSec>
