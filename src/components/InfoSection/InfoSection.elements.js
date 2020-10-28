@@ -35,6 +35,15 @@ padding-bottom:60px;
 @media screen and (max-width:768px){
 padding-bottom: 65px}`;
 
+export const TopLine = styled.div`
+  color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 16px;
+`;
+
 export const Heading = styled.h1`
 margin-bottom:24px;
 font-size:48px;

@@ -16,6 +16,7 @@ import {IconContext} from "react-icons/lib";
 import {Button} from "../../globalStyles";
 
 
+
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button,setButton] = useState(true);
@@ -52,6 +53,9 @@ window.addEventListener('resize',showButton);
         <NavMenu onClick={handleClick} click={click}>
          <NavItem>
         <NavLinks to='/' onClick={closeMobileMenu}>Home </NavLinks>
+        </NavItem>
+        <NavItem>
+        <NavLinks to='/services' onClick={closeMobileMenu}>Services</NavLinks>
         </NavItem>
         <NavItem>
         <NavLinks to='/business' onClick={closeMobileMenu}>for Business</NavLinks></NavItem>

@@ -6,13 +6,14 @@ import {InfoSec,
     TextWrapper,
     Heading,
     Subtitle,
+    TopLine,
     Img,
     ImgWrapper} from "./InfoSection.elements";
 import {Link} from 'react-router-dom';
 
 const InfoSection = ({primary,
                          lightBg,
-                         imgStart,
+                         imgStart, topLine, lightTopLine,
                          lightTextDesc,
                          buttonLabel,
                          description,
@@ -28,6 +29,7 @@ const InfoSection = ({primary,
             <InfoRow imgStart={imgStart}>
        <InfoColumn>
         <TextWrapper>
+        <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
         <Heading lightText={lightText}>{headline}</Heading>
         <Subtitle lightTextDesc = {lightTextDesc}>{description}</Subtitle>
         <Link to='/sign-up'>
