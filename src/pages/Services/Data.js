@@ -9,18 +9,5 @@ export const homeObjOne = {
     lightText:true,
     img:require('../../images/undraw_online_collaboration_7pfp.svg'),
     alt:'Image',
-start: '',
-}
-export const homeObjTwo = {
-    lightBg:  true,
-    primary: false,
-    imgStart:'start',
-    lightTextDesc: false,
-    buttonLabel:'Watch it',
-    description:'Just think positive and be nice...',
-    headline:'Work.Find.Chat',
-    lightText: false,
-    img:require('../../images/undraw_real_time_collaboration_c62i.svg'),
-    alt:'Image',
-    start: 'true',
+    start: '',
 }
