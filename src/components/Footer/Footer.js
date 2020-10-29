@@ -25,12 +25,12 @@ const Footer = () =>{
         <FooterContainer>
         <FooterSubscription>
         <FooterSubHeading>
-        Подпишись на нашу рассылку и будь в курсе всех последних событий и трендов
+        Subscribe and find out about new trends and events before anyone else
     </FooterSubHeading>
-    <FooterSubText>Ты можешь отписаться от рассылки в любое время.</FooterSubText>
+    <FooterSubText>You can unsubscribe from the mailing list at any time.</FooterSubText>
     <Form>
-    <FormInput name='email' type='email' placeholder='Твой email' />
-        <Button fontBig>Подписаться</Button>
+    <FormInput name='email' type='email' placeholder='Your email' />
+        <Button fontBig>Subscribe</Button>
     </Form>
     </FooterSubscription>
         <FooterLinksContainer>
@@ -40,24 +40,23 @@ const Footer = () =>{
     <FooterLink to='/sign-up'>How it works</FooterLink>
     <FooterLink to='/'>Testimonials</FooterLink>
         <FooterLink to='/'>Careers</FooterLink>
-        <FooterLink to='/'>Investors</FooterLink>
         <FooterLink to='/'>Terms of Service</FooterLink>
     </FooterLinkItems>
     <FooterLinkItems>
     <FooterLinkTitle>Contact Us</FooterLinkTitle>
     <FooterLink to='/'>Contact</FooterLink>
         <FooterLink to='/'>Support</FooterLink>
-        <FooterLink to='/'>Destinations</FooterLink>
+        <FooterLink to='/'>Press</FooterLink>
         <FooterLink to='/'>Sponsorships</FooterLink>
         </FooterLinkItems>
         </FooterLinksWrapper>
         <FooterLinksWrapper>
         <FooterLinkItems>
-        <FooterLinkTitle>Videos</FooterLinkTitle>
-        <FooterLink to='/'>Submit Video</FooterLink>
-    <FooterLink to='/'>Ambassadors</FooterLink>
-        <FooterLink to='/'>Agency</FooterLink>
-        <FooterLink to='/'>Influencer</FooterLink>
+        <FooterLinkTitle>Support</FooterLinkTitle>
+        <FooterLink to='/'>Help</FooterLink>
+    <FooterLink to='/'>Forum</FooterLink>
+        <FooterLink to='/'>Status</FooterLink>
+        <FooterLink to='/'>Contact</FooterLink>
         </FooterLinkItems>
         <FooterLinkItems>
         <FooterLinkTitle>Social Media</FooterLinkTitle>
